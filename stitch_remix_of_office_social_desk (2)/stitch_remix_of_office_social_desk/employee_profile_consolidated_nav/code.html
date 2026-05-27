@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sowaka - Profile - Ananya Sharma</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#3a0a00",
+                        "outline": "#8c716a",
+                        "on-tertiary-container": "#fffeff",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#58423b",
+                        "inverse-surface": "#3b2d29",
+                        "on-surface": "#251915",
+                        "surface-tint": "#a93812",
+                        "primary-container": "#c84e27",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e0c0b4",
+                        "outline-variant": "#e0c0b7",
+                        "primary-fixed": "#ffdbd1",
+                        "on-tertiary-fixed-variant": "#584239",
+                        "inverse-primary": "#ffb59f",
+                        "secondary-fixed": "#e6e2dd",
+                        "on-tertiary-fixed": "#291710",
+                        "surface": "#fff8f6",
+                        "on-primary-fixed-variant": "#862300",
+                        "secondary-container": "#e6e2dd",
+                        "surface-variant": "#f5ded7",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fff8f6",
+                        "primary-fixed-dim": "#ffb59f",
+                        "surface-container-low": "#fff1ed",
+                        "on-background": "#251915",
+                        "error": "#ba1a1a",
+                        "background": "#fff8f6",
+                        "on-primary-container": "#fffdff",
+                        "secondary": "#605e5b",
+                        "on-secondary-fixed-variant": "#484743",
+                        "surface-container-highest": "#f5ded7",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#8a7066",
+                        "surface-dim": "#ecd5cf",
+                        "tertiary-fixed": "#fddbd0",
+                        "surface-container": "#ffe9e4",
+                        "secondary-fixed-dim": "#c9c6c1",
+                        "on-secondary-fixed": "#1c1c19",
+                        "tertiary": "#70584f",
+                        "inverse-on-surface": "#ffede8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#666460",
+                        "primary": "#a73610",
+                        "surface-container-high": "#fbe3dd",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "32px",
+                        "container-margin": "20px",
+                        "sm": "8px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "lg": "24px",
+                        "unit": "4px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "title-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "title-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md min-h-screen pb-32">
+<!-- Top AppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-container-margin py-md w-full max-w-7xl mx-auto">
+<button class="active:scale-95 transition-transform duration-200 hover:opacity-80 flex items-center">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Profile</h1>
+<button class="active:scale-95 transition-transform duration-200 hover:opacity-80">
+<span class="material-symbols-outlined text-on-surface-variant">settings</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-container-margin max-w-2xl mx-auto">
+<!-- Hero Section -->
+<section class="flex flex-col items-center mb-xl">
+<div class="relative group">
+<div class="w-40 h-40 rounded-full overflow-hidden border-4 border-surface-container-highest shadow-xl transition-transform duration-500 group-hover:scale-105">
+<img alt="Ananya Sharma" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugkQ0gATkWO6GElbcunbIHC5r2eba2A4oL8OEOgee6fitmyBKpdCvTSPPbZGOGK7CKKnUg7YmkxAes0Kxf0ayBM3TWVmJNCxVAHOdYYrWJnjf7Fcl87MEKgCZ4ptM234k6R_uvCn-agyz6fGjEAi2UM-TGku2yel5txzYw6E0HBmv3HbPJDwueiW76izq-ohKonmJPu0shxTTlB6TlY85IS2NQVEyr81G45k6pc855tf2LDwvYtZOQ0z4XM"/>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary-container p-2 rounded-full border-4 border-surface shadow-lg">
+<span class="material-symbols-outlined text-on-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="text-center mt-md">
+<h2 class="font-display-lg text-display-lg text-on-surface">Ananya Sharma</h2>
+<p class="font-title-md text-title-md text-primary mt-xs">Senior Product Designer</p>
+<div class="flex items-center justify-center gap-xs mt-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-label-sm text-label-sm">Bengaluru, India</span>
+</div>
+</div>
+</section>
+<!-- Recognition Badge Section -->
+<section class="mb-xl">
+<div class="bg-primary-container p-lg rounded-xl shadow-[0_8px_24px_rgba(200,78,39,0.15)] relative overflow-hidden flex items-center gap-lg">
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[120px] text-white">workspace_premium</span>
+</div>
+<div class="bg-surface/20 p-md rounded-full backdrop-blur-md">
+<span class="material-symbols-outlined text-[48px] text-white" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="flex-1">
+<span class="inline-block bg-white/20 text-white font-label-sm text-label-sm px-sm py-xs rounded-full mb-xs">Recognition</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-white font-bold">Artist of the Month</h3>
+<p class="text-white/80 font-body-md text-body-md mt-xs">Recognized for exceptional creativity in the Q3 Design Sprint.</p>
+</div>
+</div>
+</section>
+<!-- Information List (Bento-ish Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Designation & Team -->
+<div class="glass-card p-md rounded-xl shadow-[0_4px_20px_rgba(45,27,20,0.08)] flex flex-col gap-sm">
+<div class="flex items-center gap-sm text-primary">
+<span class="material-symbols-outlined">badge</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Role</span>
+</div>
+<div>
+<p class="font-title-md text-title-md">Senior Product Designer</p>
+<p class="text-on-surface-variant">Experience Design Team</p>
+</div>
+</div>
+<!-- Manager -->
+<div class="glass-card p-md rounded-xl shadow-[0_4px_20px_rgba(45,27,20,0.08)] flex flex-col gap-sm">
+<div class="flex items-center gap-sm text-primary">
+<span class="material-symbols-outlined">account_tree</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Reports To</span>
+</div>
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of Vikram Malhotra, a male manager in his late 30s. He has a warm smile and is wearing a dark charcoal polo shirt. The background is a soft-focus office interior with warm ambient lighting and neutral beige walls. The image is crisp, modern, and fits the professional warmth design system with high-quality resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKjLYjWWbVS0-OAU6P_YO9eo-UycHTHaiJ2Wg5qR99WHfr8wXwyFPecqAhVMf2KAnH07Gq-_dNsyH9njziUc7Pzhk-tqAQUwEXeUjihRFEBPBBXXX8YOs1ZviHVgTEHssgHzdQAXqq-o5J0U38vk-TfWa6f5ey6mhMZ8x6UvpYNRSulprT9zYNJKRPLXBT03j6s0A-RB_Gf_1iLemI29o3MAqmIEYIx8BDRQ33I16XW7aucCT7oBfGxjPq_34DOt_shsRzDWtIbQ4I"/>
+</div>
+<div>
+<p class="font-title-md text-title-md">Vikram Malhotra</p>
+<p class="text-on-surface-variant font-body-md text-body-md">VP of Design</p>
+</div>
+</div>
+</div>
+<!-- Joining Date -->
+<div class="glass-card p-md rounded-xl shadow-[0_4px_20px_rgba(45,27,20,0.08)] flex flex-col gap-sm">
+<div class="flex items-center gap-sm text-primary">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Tenure</span>
+</div>
+<div>
+<p class="font-title-md text-title-md">January 15, 2023</p>
+<p class="text-on-surface-variant font-body-md text-body-md">Joined 1.5 years ago</p>
+</div>
+</div>
+<!-- Birthday -->
+<div class="glass-card p-md rounded-xl shadow-[0_4px_20px_rgba(45,27,20,0.08)] flex flex-col gap-sm">
+<div class="flex items-center gap-sm text-primary">
+<span class="material-symbols-outlined">cake</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Celebration</span>
+</div>
+<div>
+<p class="font-title-md text-title-md">October 24</p>
+<p class="text-on-surface-variant font-body-md text-body-md">Birthday</p>
+</div>
+</div>
+</section>
+<!-- Stats / Desk Widget Preview -->
+<section class="mt-xl">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-md">Recognitions</h4>
+<div class="grid gap-md grid-cols-1 sm:grid-cols-2"><div class="bg-white p-lg rounded-[24px] shadow-[0_4px_20px_rgba(45,27,20,0.08)] text-center flex flex-col items-center flex-1"><div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-md text-primary"><span class="material-symbols-outlined text-[32px]">military_tech</span></div><span class="font-headline-lg-mobile text-headline-lg-mobile">12</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Recognitions Received</span></div><div class="bg-white p-lg rounded-[24px] shadow-[0_4px_20px_rgba(45,27,20,0.08)] text-center flex flex-col items-center flex-1"><div class="w-14 h-14 bg-tertiary/10 rounded-full flex items-center justify-center mb-md text-tertiary"><span class="material-symbols-outlined text-[32px]">volunteer_activism</span></div><span class="font-headline-lg-mobile text-headline-lg-mobile">5</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">People Recognized</span></div></div>
+</section><section class="mt-xl"><h4 class="font-headline-lg-mobile text-headline-lg-mobile mb-md">Trophy Desk</h4><div class="flex gap-md overflow-x-auto pb-4 scrollbar-hide"><div class="flex-shrink-0 bg-surface-container p-md rounded-xl text-center w-28"><span class="material-symbols-outlined text-primary text-[32px] mb-xs">emoji_events</span><p class="font-label-sm text-label-sm leading-tight text-on-surface">Culture Champ</p></div><div class="flex-shrink-0 bg-surface-container p-md rounded-xl text-center w-28"><span class="material-symbols-outlined text-primary text-[32px] mb-xs">rocket_launch</span><p class="font-label-sm text-label-sm leading-tight text-on-surface">Sprint Hero</p></div><div class="flex-shrink-0 bg-surface-container p-md rounded-xl text-center w-28"><span class="material-symbols-outlined text-primary text-[32px] mb-xs">groups</span><p class="font-label-sm text-label-sm leading-tight text-on-surface">Team Player</p></div><div class="flex-shrink-0 bg-surface-container p-md rounded-xl text-center w-28"><span class="material-symbols-outlined text-primary text-[32px] mb-xs">bolt</span><p class="font-label-sm text-label-sm leading-tight text-on-surface">Fast Mover</p></div><div class="flex-shrink-0 bg-surface-container p-md rounded-xl text-center w-28"><span class="material-symbols-outlined text-primary text-[32px] mb-xs">lightbulb</span><p class="font-label-sm text-label-sm leading-tight text-on-surface">Idea Generator</p></div></div></section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-xl rounded-t-xl shadow-[0_-4px_20px_rgba(45,27,20,0.08)]">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-lg pb-lg pt-md">
+<button class="flex flex-col items-center justify-center text-secondary hover:text-primary-container transition-colors active:scale-90 duration-150">
+<span class="material-symbols-outlined">dynamic_feed</span>
+<span class="font-label-sm text-label-sm mt-xs">Feed</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary hover:text-primary-container transition-colors active:scale-90 duration-150">
+<span class="material-symbols-outlined">hail</span>
+<span class="font-label-sm text-label-sm mt-xs">Onboarding</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary hover:text-primary-container transition-colors active:scale-90 duration-150">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="font-label-sm text-label-sm mt-xs">Growth</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary hover:text-primary-container transition-colors active:scale-90 duration-150">
+<span class="material-symbols-outlined">sensors</span>
+<span class="font-label-sm text-label-sm mt-xs">Live</span>
+</button>
+<!-- Active Tab: My Desk / Profile -->
+</div>
+</nav>
+<!-- FAB for quick actions -->
+<button class="fixed right-container-margin bottom-32 w-14 h-14 bg-primary-container text-white rounded-full flex items-center justify-center shadow-[0_8px_24px_rgba(200,78,39,0.15)] active:scale-95 transition-all z-40">
+<span class="material-symbols-outlined text-[32px]">edit</span>
+</button>
+</body></html>
