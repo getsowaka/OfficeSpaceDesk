@@ -1,0 +1,276 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Care Hub - Wellness &amp; Growth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1;
+        }
+        body {
+            background-color: #fff8f6;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e0c0b7;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#a73610",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#c84e27",
+                        "on-primary-container": "#fffdff",
+                        "primary-fixed": "#ffdbd1",
+                        "primary-fixed-dim": "#ffb59f",
+                        "secondary": "#605e5b",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#e6e2dd",
+                        "on-secondary-container": "#666460",
+                        "tertiary": "#70584f",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#8a7066",
+                        "on-tertiary-container": "#fffeff",
+                        "surface": "#fff8f6",
+                        "on-surface": "#251915",
+                        "surface-variant": "#f5ded7",
+                        "on-surface-variant": "#58423b",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#fff1ed",
+                        "surface-container": "#ffe9e4",
+                        "surface-container-high": "#fbe3dd",
+                        "surface-container-highest": "#f5ded7",
+                        "outline": "#8c716a",
+                        "outline-variant": "#e0c0b7",
+                        "background": "#fff8f6",
+                        "on-background": "#251915"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "sm": "8px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "container-margin": "20px",
+                        "gutter": "12px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "title-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 backdrop-blur-xl bg-surface/80 border-b border-outline-variant/30">
+<div class="flex items-center justify-between px-container-margin py-md"><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant active:scale-95 transition-transform"><img alt="User profile photo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvp9cfaHgLMs_XGCqa9CMhx1TJzrGdZPVNYSIUeajWNLPEwFnUusSzBZV75Nt1LbuzrnQ5IIwzJKV3TMAVMvoFUEAT4_W_z_tK05ugrB7H8PKsUg-AFd6wggDNZEi--oE8tMqjjaOJ0FIhtuXx5d4FDbKH_3MWPWzzQpo9sxgFpPDRP8hPL416xpXJ5yDfyPgFiHutyIxamQBIcElmfok38IMHSAAPrdXrY-pWA45n2OnJHfr6_Y_TaPepPB-6FHZzfSLSwyyijcbM"></div><h1 class="font-headline text-headline-lg-mobile text-primary tracking-tight">Care Hub</h1></div><button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant hover:bg-surface-container-low transition-colors active:scale-95"><span class="material-symbols-outlined text-on-surface-variant">notifications</span></button></div>
+</header>
+<main class="pb-32 pt-lg px-container-margin max-w-2xl mx-auto space-y-lg">
+<!-- 1. Total Steps Section (Clean Card Style) -->
+<section class="bg-surface-container-high rounded-2xl p-6 flex items-center justify-between shadow-sm border border-outline-variant/20">
+<div class="space-y-1">
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest">Today's Activity</p>
+<h2 class="font-headline text-headline-lg-mobile text-on-surface">8,432 Total Steps</h2>
+<button class="mt-2 bg-primary text-on-primary px-4 py-1.5 rounded-full font-label-sm shadow-sm active:scale-95 transition-all">View Details</button>
+</div>
+<div class="relative w-20 h-20 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-variant" cx="40" cy="40" fill="transparent" r="34" stroke="currentColor" stroke-width="6"></circle>
+<circle class="text-primary" cx="40" cy="40" fill="transparent" r="34" stroke="currentColor" stroke-dasharray="213.6" stroke-dashoffset="40" stroke-linecap="round" stroke-width="6"></circle>
+</svg>
+<div class="absolute">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+</div>
+</div>
+</section>
+<!-- 2. Wellness Questionnaires (Sowaka Styles) -->
+<section class="space-y-md">
+<h3 class="font-headline text-title-md text-on-surface px-1">Weekly Check-in</h3>
+<!-- Q1 - Radio Style Cards -->
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-4">
+<h4 class="font-body font-semibold text-on-surface">Where do you feel you currently need the most support or focus?</h4>
+<div class="space-y-2">
+<label class="flex items-center p-4 rounded-xl bg-surface border border-outline-variant cursor-pointer active:scale-[0.99] transition-all hover:bg-surface-container-lowest">
+<input checked="" class="w-5 h-5 text-primary focus:ring-primary border-outline-variant rounded-full" name="support" type="radio">
+<span class="ml-3 font-body text-body-md">Mental &amp; Emotional Wellbeing</span>
+</label>
+<label class="flex items-center p-4 rounded-xl bg-surface border border-outline-variant cursor-pointer active:scale-[0.99] transition-all hover:bg-surface-container-lowest">
+<input class="w-5 h-5 text-primary focus:ring-primary border-outline-variant rounded-full" name="support" type="radio">
+<span class="ml-3 font-body text-body-md">Financial Planning/Health</span>
+</label>
+<label class="flex items-center p-4 rounded-xl bg-surface border border-outline-variant cursor-pointer active:scale-[0.99] transition-all hover:bg-surface-container-lowest">
+<input class="w-5 h-5 text-primary focus:ring-primary border-outline-variant rounded-full" name="support" type="radio">
+<span class="ml-3 font-body text-body-md">Physical Fitness</span>
+</label>
+<label class="flex items-center p-4 rounded-xl bg-surface border border-outline-variant cursor-pointer active:scale-[0.99] transition-all hover:bg-surface-container-lowest">
+<input class="w-5 h-5 text-primary focus:ring-primary border-outline-variant rounded-full" name="support" type="radio">
+<span class="ml-3 font-body text-body-md">Rest &amp; Sleep Quality</span>
+</label>
+<label class="flex items-center p-4 rounded-xl bg-surface border border-outline-variant cursor-pointer active:scale-[0.99] transition-all hover:bg-surface-container-lowest">
+<input class="w-5 h-5 text-primary focus:ring-primary border-outline-variant rounded-full" name="support" type="radio">
+<span class="ml-3 font-body text-body-md">Hormonal Health</span>
+</label></div>
+</div>
+<!-- Q2 - Choice Cards -->
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-4">
+<h4 class="font-body font-semibold text-on-surface">Which engagement and team-building activity would you look forward to next month?</h4>
+<div class="grid grid-cols-1 gap-3">
+<button class="flex items-center justify-between p-4 rounded-xl border-2 border-primary text-primary bg-primary-fixed/30 text-left transition-colors">
+<span class="font-body font-semibold">Creative Pottery</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<button class="flex items-center justify-between p-4 rounded-xl border border-outline-variant text-on-surface-variant bg-surface text-left">
+<span class="font-body">Sound Healing &amp; Relaxation</span>
+<span class="material-symbols-outlined text-outline-variant">circle</span>
+</button>
+<button class="flex items-center justify-between p-4 rounded-xl border border-outline-variant text-on-surface-variant bg-surface text-left">
+<span class="font-body">Interactive Creative Arts</span>
+<span class="material-symbols-outlined text-outline-variant">circle</span>
+</button>
+</div>
+</div>
+<!-- Q3 - Checkbox Style -->
+<div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-4">
+<h4 class="font-body font-semibold text-on-surface">In your opinion, which of the following areas holds the key to unlocking your highest potential?</h4>
+<div class="space-y-3">
+<label class="flex items-center p-4 rounded-xl border border-outline-variant bg-surface active:scale-[0.99] transition-all">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="ml-3 font-body text-body-md">AI &amp; Technical Upskilling</span>
+</label><label class="flex items-center p-4 rounded-xl border border-outline-variant bg-surface active:scale-[0.99] transition-all">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="ml-3 font-body text-body-md">Effective Communication</span>
+</label>
+<label class="flex items-center p-4 rounded-xl border border-outline-variant bg-surface active:scale-[0.99] transition-all">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="ml-3 font-body text-body-md">Leadership Development</span>
+</label>
+<label class="flex items-center p-4 rounded-xl border border-outline-variant bg-surface active:scale-[0.99] transition-all">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="ml-3 font-body text-body-md">Essential New Manager Training</span>
+</label></div>
+</div>
+</section>
+<!-- 3. Glimpse Section (Feed Card Style) -->
+<section class="space-y-md">
+<h3 class="font-headline text-title-md text-on-surface px-1">Glimpse from Past Sessions</h3>
+<div class="overflow-hidden rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<img alt="Pottery Workshop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyf8ywmUx2XywIwbQoIfwrW-jIAfy1r-jL1VmaFoHg65lywxoGIJfuPBY0fZOzzV1TAyOlTfFDNx6pNR2LK2PrChI1Wzv3SmR7kxXjhWnz9qHMdriMjzYc_ThdLzvySEU0uUHQVhVf2XK1kPuXS_m3HcFbyaapO6wZ2hswHVv32WaGMHGun2N8YF4A72exnB38EQVZ0tZRnc3BfFBoM2aXmCljyyf5aeruIk0OJbJq7_8qpXafXAPvpdUDBaMuteRKq1T5qvNF4i_T">
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-surface/90 text-primary text-[10px] font-bold rounded-full uppercase tracking-widest border border-outline-variant/30 backdrop-blur-sm">Event Highlights</span>
+</div>
+</div>
+<div class="p-5 space-y-3">
+<p class="font-body text-body-lg text-on-surface italic leading-relaxed">"A morning of tactile meditation and community building at our recent Pottery Workshop. Seeing the team unplug and create was truly inspiring."</p>
+<div class="flex items-center gap-6 pt-2">
+<button class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+<span class="text-xs font-semibold">24</span>
+</button>
+<button class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<span class="text-xs font-semibold">8</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. RSVP Section (Announcement Card Style) -->
+<section class="bg-primary-container text-on-primary rounded-2xl p-8 relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+<div class="relative z-10 space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">event</span>
+<p class="font-label-sm uppercase tracking-widest text-on-primary/80">Coming Soon</p>
+</div>
+<div class="space-y-1">
+<h2 class="font-headline text-headline-lg-mobile">Next Session: Sound Healing</h2>
+<p class="font-body text-body-md text-on-primary/90 leading-relaxed">Join us for a restorative acoustic experience to reset your nervous system.</p>
+</div>
+<div class="flex items-center justify-between pt-6">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-tighter opacity-70">DATE</span>
+<span class="font-headline text-body-lg">July 15th, 2024</span>
+</div>
+<button class="bg-white text-primary font-bold px-8 py-3 rounded-full shadow-lg hover:bg-surface-container-lowest active:scale-95 transition-all">Count Me In</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Consolidated Style) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-2xl border-t border-outline-variant/30 px-6 py-2 pb-8 flex justify-between items-center">
+<a class="flex flex-col items-center gap-1 px-3 py-2 text-on-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">rss_feed</span>
+<span class="font-label-sm">Feed</span>
+</a>
+<a class="flex flex-col items-center gap-1 px-3 py-2 text-on-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">hail</span>
+<span class="font-label-sm">Onboarding</span>
+</a>
+<a class="flex flex-col items-center gap-1 px-3 py-2 text-on-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="font-label-sm">Growth</span>
+</a>
+<a class="flex flex-col items-center gap-1 px-5 py-2 bg-primary text-on-primary rounded-full shadow-md scale-105" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm">Care</span>
+</a>
+</nav>
+<script>
+    // RSVP button interactivity
+    const rsvpBtn = document.querySelector('button:contains("Count Me In")') || [...document.querySelectorAll('button')].find(el => el.innerText === "Count Me In");
+    if (rsvpBtn) {
+        rsvpBtn.addEventListener('click', function() {
+            this.innerText = "You're In! ✨";
+            this.classList.add('bg-primary-fixed', 'text-primary');
+        });
+    }
+
+    // Ripple effect simulation for cards
+    document.querySelectorAll('label, button').forEach(el => {
+        el.addEventListener('mousedown', function() {
+            this.classList.add('opacity-80');
+        });
+        el.addEventListener('mouseup', function() {
+            this.classList.remove('opacity-80');
+        });
+    });
+</script>
+
+
+
+
+</body></html>
